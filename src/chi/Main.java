@@ -6,7 +6,10 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Student st1 = new Student("Дарт", "Вейдер", "Звездосмертович", Gender.male, 100, 1, "Звезда смерти",
+/*		Student st1 = new Student("Дарт", "Вейдер", "Звездосмертович", Gender.male, 100, 1, "Звезда смерти",
+				"Уничтожения");*/
+		
+		Student st1 = new Student("Дарт", "", "Звездосмертович", Gender.male, 100, 1, "Звезда смерти",
 				"Уничтожения");
 		Student st2 = new Student("Люк", "Скайвокер", "Гонщикович", Gender.male, 15, 1, "Звезда смерти", "Уничтожения");
 		Student st3 = new Student("Лея", "Органа", "Принцессовна", Gender.female, 20, 1, "Звезда смерти",
@@ -99,6 +102,11 @@ public class Main {
 		Student[] rec = grp1.getRecruits();
 
 		System.out.println(Arrays.toString(rec));
+		
+		//SaveLoadGroup.SaveGroup(grp1);
+		System.out.println("-----------------------------");
+		Group grpNew = SaveLoadGroup.LoadGroup();
+		System.out.println(grpNew.toString());
 
 	}
 

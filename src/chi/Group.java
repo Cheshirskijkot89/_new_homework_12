@@ -234,6 +234,10 @@ public class Group implements Voenkom {
 
 		boolean sortingFinishing = false;
 		boolean positionIsChanged = false;
+		
+		if (fieldOFSort == null) {
+			return;
+		}
 
 		while (sortingFinishing == false) {
 
@@ -269,6 +273,12 @@ public class Group implements Voenkom {
 		}
 
 	}
+	
+	Student[] GetStudents() {
+		
+		return grp;
+		
+	};
 
 	@Override
 	public String toString() {
